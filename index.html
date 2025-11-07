@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adjoa Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <nav class="navbar">
+      <!-- Hamburger Icon -->
+      <div class="menu-toggle" id="menu-toggle">
+        ☰ <span class="menu-text">Menu</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Skills.html">Skills</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Blogs.html">Blogs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+ <!-- Hero Section -->
+
+
+ <div>  
+  <section class="hero">
+  
+    
+    <h1 class="hero-title">Welcome to my portfolio</h1>
+
+    <p class="tagline">
+      I'm A Full Stack Developer | Software Developer | SQL Database Administrator |
+      Data Analyst | IT Support Specialist.
+    </p>
+  </div>
+
+  <!-- Mobile menu toggle -->
+  <script>
+    // Toggle menu visibility when hamburger icon is clicked
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      document.getElementById("menu").classList.toggle("active");
+    });
+  </script>
+
+
+    <!-- Profile picture overlay -->
+    <div class="avatar-wrap">
+      <img src="images/profile picture.jpg" alt="Adjoa Koutonin" class="avatar"/>
+      <h1 class="name">Adjoa Koutonin</h1>
+
+    </div>
+
+   
+  </section>
+
+ <!-- Skills Section -->
+<section class="skills-section">
+  <h2>My Skills</h2>
+
+  <div class="skills-container">
+    <!-- Left Box -->
+    <div class="skill-box">
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </div>
+
+    <!-- Right Box -->
+    <div class="skill-box">
+      <ul class="skills">
+        <li>SQL Database Management</li>
+        <li>Data Analysis (Google Data Studio, Excel, Tableau)</li>
+        <li>Microsoft Azure</li>
+        <li>IT Support & Troubleshooting</li>
+        <li>Version Control (Git, GitHub)</li>
+        <li> Infographic (Visual representation of complex IT information or data)</li>
+      </ul>
+
+      
+    </div>
+  </div>
+     <div class="arrow down"></div>
+
+    <a class="btn" href="Skills.html">Explore for more skills</a>
+  </section>
+ 
+
+ <!-- Projects CTA -->
+<section class="projects-section">
+  <div class="projects-container">
+
+    <div class="project-box">
+      <h2>Project 1</h2>
+      <ul>
+        <li>TaskFlow Kanban Board</li>
+        <li>Full-stack web app using React, Node.js, and SQL.</li>
+      </ul>
+    </div>
+
+    <div class="project-box">
+      <h2>Project 2</h2>
+      <ul>
+        <li>Operations Dashboard</li>
+        <li>Data analytics project using Python, SQL & Tableau.</li>
+      </ul>
+    </div>
+
+    <div class="project-box">
+      <h2>Project 3</h2>
+      <ul>
+        <li>Serverless Image Resizer</li>
+        <li>Azure Function for auto image processing and storage.</li>
+      </ul>
+    </div>
+
+    </div>
+
+    <div class="arrow down"></div>
+    
+    <a class="btn-pjts" href="Projects.html">Explore for more projects</a>
+  
+</section>
+
+ <!-- Contact Form Link -->
+<div class="contact-us">
+  <a href="Contact.html">Contact Us</a>
+</div>
+
+<section class="form-section">
+  <form class="form" action="Contact.html" method="post" novalidate>
+    <div class="form-row">
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
+    </div>
+
+    <div class="form-row">
+      <label for="last_name">Last Name</label>
+      <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required>
+    </div>
+
+    <div class="form-row">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. +1(319) 560 3212" inputmode="tel" pattern="[\d\s()+-]{7,}">
+    </div>
+
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="e.g. code@gmail.com" required>
+    </div>
+
+    <div class="form-row">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Please enter your message" rows="5" required></textarea>
+    </div>
+
+    <div class="form-row">
+      <label for="reason">Reason for contacting</label>
+      <select id="reason" name="reason" required>
+        <option value="" disabled selected>Select a reason</option>
+        <option value="support">Support</option>
+        <option value="projects">Projects</option>
+        <option value="general">General Inquiry</option>
+        <option value="feedback">Feedback</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn-submit">Submit</button>
+  </form>
+</section>
+
+
+        
+</div>
+  </div>
+   </div>
+
+<!-- Footer -->
+<footer class="signature">
+  <p> <strong>Adjoa Koutonin Innovator. Developer. Leader.<br>
+  Designing technology that inspires human progress. </strong></p>
+
+  <!-- Image Section -->
+<div class="image_2">
+  <img src="Images/Image_2.png" alt="Thank you image"/>
+  <div class="overlay_text">
+    <h1>Thank you for visiting my website!</h1>
+    <h2>“Engineering excellence through code, data, and innovation.”</h2>
+  </div>
+</div>
+</footer>
+
+<!-- Social Media Links -->
+<div class="social-media">
+  <a href="https://www.facebook.com/profile.php?id=61581335174509" target="_blank">
+    <img src="images/Facebook.png" width="20" alt="Facebook"> Facebook
+  </a>
+
+  <a href="https://www.linkedin.com/in/adjoa-koutonin6991/" target="_blank">
+    <img src="images/Linkdine.png" width="20" alt="LinkedIn"> LinkedIn
+  </a>
+
+  <a href="https://www.tiktok.com/@provideo83" target="_blank">
+    <img src="images/Tiktok.png" width="20" alt="TikTok"> TikTok
+  </a>
+
+  <a href="https://www.youtube.com/@adjoakoutonin1789" target="_blank">
+    <img src="images/Youtube.png" width="20" alt="YouTube"> YouTube
+  </a>
+
+  <a href="https://github.com/koutonin96" target="_blank">
+    <img src="images/Github.png" width="20" alt="GitHub"> GitHub
+  </a>
+</div>
+
+<footer class="copyrights">
+  <p>&copy; <span id="year"></span> 2025 Adjoa Koutonin. All rights reserved.</p>
+</footer>
+
+<script>
+  // Automatically update the year
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+ 
+ 
+</body>
+</html>
