@@ -159,7 +159,22 @@ a:hover { text-decoration: underline; }
   margin: 12px auto 0;
 }
 
+.experience-badge {
+  margin-top: 12px;
+  display: inline-block;
+  background-color: #181263;
+  color: white;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+.experience-badge:hover {
+  background-color: #2d238d;
+  transform: scale(1.05);
+}
 /* ===============================
    PROFILE PICTURE 
 =============================== */
@@ -610,7 +625,8 @@ body {
 
 .social-media {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
+  padding-bottom: 10px;
 }
 
 .social-media a {
@@ -644,7 +660,10 @@ footer.copyrights {
   margin-top: 20px;
   font-size: 0.9rem;
   color: #444;
+  padding-bottom: 20px;
 }
+
+
 
 /* ===============================
    PROJECTS Section
